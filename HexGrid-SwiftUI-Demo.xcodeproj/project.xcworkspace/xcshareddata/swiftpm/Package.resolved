@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "hex-grid",
+        "repositoryURL": "https://github.com/fananek/hex-grid",
+        "state": {
+          "branch": null,
+          "revision": "8ba5c97d0d7189322f4db42fc356ebf4a7b815bb",
+          "version": "0.4.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

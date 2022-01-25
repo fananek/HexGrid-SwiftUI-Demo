@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D87CFD7527935D510047F6DF /* HexGrid_SwiftUI_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CFD7427935D510047F6DF /* HexGrid_SwiftUI_DemoApp.swift */; };
-		D87CFD7727935D510047F6DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CFD7627935D510047F6DF /* ContentView.swift */; };
+		D87CFD7727935D510047F6DF /* HexGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CFD7627935D510047F6DF /* HexGridView.swift */; };
 		D87CFD7927935D520047F6DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87CFD7827935D520047F6DF /* Assets.xcassets */; };
 		D87CFD7C27935D520047F6DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87CFD7B27935D520047F6DF /* Preview Assets.xcassets */; };
+		D8A0AB4B27935FE1005C609C /* HexGrid in Frameworks */ = {isa = PBXBuildFile; productRef = D8A0AB4A27935FE1005C609C /* HexGrid */; };
+		D8A0AB4D27936025005C609C /* Cell+Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0AB4C27936025005C609C /* Cell+Highlight.swift */; };
+		D8A0AB4F2793683B005C609C /* Point+CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0AB4E2793683B005C609C /* Point+CGPoint.swift */; };
+		D8A7FFC2279383110016205F /* OnTap+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7FFC1279383110016205F /* OnTap+Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D87CFD7127935D500047F6DF /* HexGrid-SwiftUI-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HexGrid-SwiftUI-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87CFD7427935D510047F6DF /* HexGrid_SwiftUI_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexGrid_SwiftUI_DemoApp.swift; sourceTree = "<group>"; };
-		D87CFD7627935D510047F6DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D87CFD7627935D510047F6DF /* HexGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexGridView.swift; sourceTree = "<group>"; };
 		D87CFD7827935D520047F6DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D87CFD7B27935D520047F6DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8A0AB4C27936025005C609C /* Cell+Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Highlight.swift"; sourceTree = "<group>"; };
+		D8A0AB4E2793683B005C609C /* Point+CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Point+CGPoint.swift"; sourceTree = "<group>"; };
+		D8A7FFC1279383110016205F /* OnTap+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnTap+Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A0AB4B27935FE1005C609C /* HexGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				D87CFD7427935D510047F6DF /* HexGrid_SwiftUI_DemoApp.swift */,
-				D87CFD7627935D510047F6DF /* ContentView.swift */,
+				D87CFD7627935D510047F6DF /* HexGridView.swift */,
+				D8A0AB4C27936025005C609C /* Cell+Highlight.swift */,
+				D8A0AB4E2793683B005C609C /* Point+CGPoint.swift */,
+				D8A7FFC1279383110016205F /* OnTap+Location.swift */,
 				D87CFD7827935D520047F6DF /* Assets.xcassets */,
 				D87CFD7A27935D520047F6DF /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "HexGrid-SwiftUI-Demo";
+			packageProductDependencies = (
+				D8A0AB4A27935FE1005C609C /* HexGrid */,
+			);
 			productName = "HexGrid-SwiftUI-Demo";
 			productReference = D87CFD7127935D500047F6DF /* HexGrid-SwiftUI-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D87CFD6827935D500047F6DF;
+			packageReferences = (
+				D8A0AB4927935FE1005C609C /* XCRemoteSwiftPackageReference "hex-grid" */,
+			);
 			productRefGroup = D87CFD7227935D500047F6DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D87CFD7727935D510047F6DF /* ContentView.swift in Sources */,
+				D87CFD7727935D510047F6DF /* HexGridView.swift in Sources */,
+				D8A7FFC2279383110016205F /* OnTap+Location.swift in Sources */,
 				D87CFD7527935D510047F6DF /* HexGrid_SwiftUI_DemoApp.swift in Sources */,
+				D8A0AB4D27936025005C609C /* Cell+Highlight.swift in Sources */,
+				D8A0AB4F2793683B005C609C /* Point+CGPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8A0AB4927935FE1005C609C /* XCRemoteSwiftPackageReference "hex-grid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fananek/hex-grid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8A0AB4A27935FE1005C609C /* HexGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8A0AB4927935FE1005C609C /* XCRemoteSwiftPackageReference "hex-grid" */;
+			productName = HexGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D87CFD6927935D500047F6DF /* Project object */;
 }
