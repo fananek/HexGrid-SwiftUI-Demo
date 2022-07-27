@@ -3,7 +3,7 @@ import HexGrid
 
 struct HexGridView: View {
     @State var cellInfo = "Tap on cell"
-    let grid = HexGrid(shape: GridShape.hexagon(2))
+    let grid = HexGrid(shape: GridShape.hexagon(3))
     var body: some View {
         VStack {
             Canvas { context, size in
